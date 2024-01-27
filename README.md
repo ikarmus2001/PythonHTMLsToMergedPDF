@@ -6,9 +6,14 @@ Very short, low-optimized solution to convert many htmls into merged pdf
 ```
 pip install pypdf2 weasyprint
 ```
-I used WeasyPrint v60.2 and PyPDF2 3.0.1
+I used [WeasyPrint](https://weasyprint.org/) v60.2 and [PyPDF2](https://pypdf2.readthedocs.io/en/latest/index.html) 3.0.1
 ## To use WeasyPrint you will need GTK3 installed 
 (Windows solution: [GTK-for-Windows-Runtime-Environment-Installer](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer))
+
+Also you have to set env variable to GTK3 binaries (example with default installation path)
+```cmd
+set WEASYPRINT_DLL_DIRECTORIES=C:\Program Files\GTK3-Runtime Win64\bin
+```
 
 More on [WeasyPrint website](https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#windows)
 
